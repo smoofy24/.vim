@@ -1,4 +1,4 @@
-call plug#begin('~/my-vim-config/plugged')
+call plug#begin('~/Documents/my_vim/plugged')
 
 " Pluginy zde
 Plug 'scrooloose/nerdtree'
