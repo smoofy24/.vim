@@ -17,6 +17,8 @@ Plug 'vim-python/python-syntax'
 Plug 'Chiel92/vim-autoformat'
 Plug 'preservim/tagbar'
 Plug 'jiangmiao/auto-pairs'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
