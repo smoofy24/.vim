@@ -1,4 +1,4 @@
-call plug#begin('~/Documents/my_vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " Plugins here
 Plug 'scrooloose/nerdtree'

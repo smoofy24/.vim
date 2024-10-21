@@ -13,9 +13,16 @@ autocmd vimenter * if !argc() | NERDTree | endif
 nmap <C-n> :NERDTreeToggle<CR>
 
 " Autoformat on save
-autocmd BufWritePre * Autoformat
+autocmd BufWritePre *.py,*.rs Autoformat
 
+" Context help
 autocmd FileType rust nnoremap K :call CocAction('doHover')<CR>
 autocmd FileType python nnoremap K :call CocAction('doHover')<CR>
 
-autocmd BufReadPost * :TagbarOpen
+autocmd BufReadPost * if !exists('t:TagbarWindowOpen') | execute 'TagbarOpen' | let t:TagbarWindowOpen = 1 | endif
+nmap <C-t> :TagbarClose<CR>
+nmap <C-t> :TagbarToggle<CR>
+
+" YAML automatic check and indent
+autocmd BufWritePre *.yaml,*.yml :silent! !prettier --write % | silent! !yamllint %
+
