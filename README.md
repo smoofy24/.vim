@@ -17,5 +17,6 @@ This repository contains my custom Vim configuration, designed to optimize devel
    ```bash
    git clone https://github.com/yourusername/vim-config.git ~/.vim
    ln -s ~/.vim/.vimrc ~/.vimrc
+   vim +PluginInstall +qall
 
 
