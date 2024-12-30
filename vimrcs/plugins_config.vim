@@ -19,6 +19,7 @@ Plug 'preservim/tagbar'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
