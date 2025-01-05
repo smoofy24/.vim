@@ -13,6 +13,8 @@ autocmd vimenter * if !argc() | NERDTree | endif
 nmap <C-n> :NERDTreeToggle<CR>
 
 " Autoformat on save
+let g:formatdef_ruff = "'ruff --fix --stdin-filename %'"
+let g:formatters_python = ['ruff']
 autocmd BufWritePre *.py,*.rs Autoformat
 
 " Context help
