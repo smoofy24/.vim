@@ -19,4 +19,8 @@ This repository contains my custom Vim configuration, designed to optimize devel
    ln -s ~/.vim/.vimrc ~/.vimrc
    vim +PluginInstall +qall
 
+2. Install following packages
+   - nodejs
+   - exuberant-ctags 
+
 
