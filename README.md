@@ -13,14 +13,12 @@ This repository contains my custom Vim configuration, designed to optimize devel
 
 ## Installation
 
-1. Clone this repository into your home directory:
+1. Install following packages
+   - nodejs
+   - exuberant-ctags
+ 
+2. Clone this repository into your home directory:
    ```bash
    git clone https://github.com/yourusername/vim-config.git ~/.vim
    ln -s ~/.vim/.vimrc ~/.vimrc
    vim +PluginInstall +qall
-
-2. Install following packages
-   - nodejs
-   - exuberant-ctags 
-
-
