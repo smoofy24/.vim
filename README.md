@@ -19,6 +19,6 @@ This repository contains my custom Vim configuration, designed to optimize devel
  
 2. Clone this repository into your home directory:
    ```bash
-   git clone https://github.com/yourusername/vim-config.git ~/.vim
+   git clone https://github.com/smoofy24/.vim.git ~/.vim
    ln -s ~/.vim/.vimrc ~/.vimrc
    vim +PluginInstall +qall
