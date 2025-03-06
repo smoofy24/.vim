@@ -21,4 +21,4 @@ This repository contains my custom Vim configuration, designed to optimize devel
    ```bash
    git clone https://github.com/smoofy24/.vim.git ~/.vim
    ln -s ~/.vim/.vimrc ~/.vimrc
-   vim +PluginInstall +qall
+   vim +PlugInstall +qall
