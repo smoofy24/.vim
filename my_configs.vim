@@ -39,3 +39,7 @@ nnoremap <Leader>n :bnext<CR>
 nnoremap <Leader>p :bprev<CR>
 nnoremap <Leader>d :bd<CR>
 nnoremap <Leader>l :ls<CR>
+nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>h :History<CR>
+nnoremap <Leader>/ :BLines<CR>

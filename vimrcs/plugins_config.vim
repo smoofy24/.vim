@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'ap/vim-buftabline'
 Plug 'RRethy/vim-illuminate'
 Plug 'airblade/vim-gitgutter'
