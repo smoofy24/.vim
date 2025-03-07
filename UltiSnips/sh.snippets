@@ -1,0 +1,43 @@
+snippet boilerplate "Bash script boilerplate"
+#!/usr/bin/env bash
+#===============================================================================
+#          FILE: ${1:script.sh}
+#         USAGE: ./${1:script.sh}
+#   DESCRIPTION: ${2:A brief description of this script}
+#       OPTIONS: ---
+#  REQUIREMENTS: ---
+#          BUGS: ---
+#         NOTES: ---
+#        AUTHOR: ${3:Your Name}, ${4:your@email.com}
+#  ORGANIZATION: ${5:Your Organization}
+#       CREATED: `!p
+import datetime
+now = datetime.datetime.now()
+t = now.strftime("%Y-%m-%d %H:%M:%S")
+t
+`
+#      REVISION:  ---
+#===============================================================================
+
+set -o nounset                              # Treat unset variables as an error
+set -o errexit                              # Exit script when a command fails
+set -o pipefail                             # Catch errors in pipelines
+
+#=== FUNCTION ==================================================================
+#        NAME: main
+# DESCRIPTION: Main function
+# PARAMETER 1: None
+#===============================================================================
+main() {
+    ${0:# Your code here}
+}
+
+main "$@"
+endsnippet
+
+snippet python_test "Python test snippet"
+Current date and time: `!p
+import datetime
+datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+`
+endsnippet
