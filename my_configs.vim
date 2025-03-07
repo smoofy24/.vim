@@ -7,9 +7,16 @@ set expandtab
 set autoindent
 colorscheme murphy
 
+" Define leader
+let mapleader=","
+
+" Bufer numbering
+let g:buftabline_numbers = 2
+
 " NERDTree configuration
-let NERDTreeShowHidden=1
-autocmd vimenter * if !argc() | NERDTree | endif
+let NERDTreeQuitOnOpen = 0
+let NERDTreeShowHidden = 1
+autocmd VimEnter * if argc() == 0 | NERDTree | wincmd p | endif
 nmap <C-n> :NERDTreeToggle<CR>
 
 " Autoformat on save
@@ -22,9 +29,13 @@ autocmd FileType rust nnoremap K :call CocAction('doHover')<CR>
 autocmd FileType python nnoremap K :call CocAction('doHover')<CR>
 
 autocmd BufReadPost * if !exists('t:TagbarWindowOpen') | execute 'TagbarOpen' | let t:TagbarWindowOpen = 1 | endif
-nmap <C-t> :TagbarClose<CR>
-nmap <C-t> :TagbarToggle<CR>
+nmap <C-m> :TagbarClose<CR>
+nmap <C-m> :TagbarToggle<CR>
 
 " YAML automatic check and indent
 autocmd BufWritePre *.yaml,*.yml :silent! !prettier --write % | silent! !yamllint %
 
+nnoremap <Leader>n :bnext<CR>
+nnoremap <Leader>p :bprev<CR>
+nnoremap <Leader>d :bd<CR>
+nnoremap <Leader>l :ls<CR>
