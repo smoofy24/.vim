@@ -22,6 +22,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'github/copilot.vim'
+Plug 'moll/vim-bbye'
 
 call plug#end()
 

@@ -43,6 +43,12 @@ nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>h :History<CR>
 nnoremap <Leader>/ :BLines<CR>
+nnoremap <Leader>q :%bdelete<Bar>edit#<Bar>Bdelete!#<CR>
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 let g:UltiSnipsExpandTrigger='<Tab>'
 let g:UltiSnipsJumpForwardTrigger='<C-j>'
