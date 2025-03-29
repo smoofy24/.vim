@@ -23,6 +23,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'github/copilot.vim'
 Plug 'moll/vim-bbye'
+Plug 'stephpy/vim-yaml'
 
 call plug#end()
 

@@ -34,6 +34,13 @@ nmap <C-m> :TagbarToggle<CR>
 
 " YAML automatic check and indent
 autocmd BufWritePre *.yaml,*.yml :silent! !prettier --write % | silent! !yamllint %
+let g:ale_linters = get(g:, 'ale_linters', {})
+let g:ale_linters.yaml = ['yamllint']
+
+let g:ale_fixers = get(g:, 'ale_fixers', {})
+let g:ale_fixers.yaml = ['prettier']
+
+let g:ale_fix_on_save = 1
 
 nnoremap <Leader>n :bnext<CR>
 nnoremap <Leader>p :bprev<CR>

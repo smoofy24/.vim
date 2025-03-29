@@ -16,6 +16,8 @@ This repository contains my custom Vim configuration, designed to optimize devel
 1. Install following packages
    - nodejs
    - exuberant-ctags
+   - prettier
+   - yamllint
  
 2. Clone this repository into your home directory:
    ```bash
